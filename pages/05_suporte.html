@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/suporte.css">
+    <script src="../components/footer.js"></script>
+    <script src="../components/header.js"></script>
+    <script src="../components/suporte.js"></script>
+    <script src="../components/footer.js" ></script>
+    <script src="../components/header.js" ></script>
+    <script src="../Js/suporte.js"></script>
+    
+</head>
+
+<body>
+     <header-component></header-component>
+    <main>
+       
+        <section id="s1">
+            <h2 class="sub"><span class="material-symbols--headphones-outline-rounded"></span>Central de suporte</h2>
+            <h1 class="titulo">Como podemos <span>ajudar</span> você?</h1>
+            <p class="encontre">Encontre respostas para suas dúvidas ou entre em contato com nossa equipe.</p>
+            <div id="input">
+                <span class="material-symbols--search-rounded"></span>
+                <input type="text" placeholder="Pesquise sua dúvida..." name="" id="pesquisa">
+            </div>
+        </section>
+
+        <article>
+            <h1 class="perguntas">Perguntas frequentes</h1>
+            <p class="reunimos">Reunimos dúvidas comuns para ajudar você a encontrar respostas rapidamente.</p>
+            <section id="s2">
+                <div class="cards">
+                    <div class="card red" onclick="show_img1()">
+                        <span class="akar-icons--book"></span>
+                        <h3 class="geralh3">Geral</h3>
+                        <p class="geralp">Informações gerais sobre a Integra+ e como funciona</p>
+
+                    </div>
+                    <div class="card blue" onclick="show_img2()">
+                        <span class="famicons--card-outline"></span>
+                        <h3 class="planosh3">Planos e pagamentos</h3>
+                        <p class="planosp">Tire suas dúvidas sobre nossos planos e preços</p>
+                    </div>
+                    <div class="card green" onclick="show_img3()">
+                        <span class="temaki--lawyer"></span>
+                        <h3 class="tecnicoh3">Legislação</h3>
+                        <p class="tecnicop">Entenda as obrigações legais de acessibilidade</p>
+                    </div>
+                </div>
+            </section>
+            <section id="s3">
+                <div>
+                    <img src="../img/Group 71.png" class="img1">
+                </div>
+                <div><img src="../img/Group 72.png" class="img2"></div>
+                <div><img src="../img/Group 73.png" class="img3"></div>
+            </section>
+
+            <h1 class="fale">Fale com a <span>nossa equipe</span></h1>
+            <p class="preencha">Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+        </article>
+        <section id="form">
+
+            <div class="form-container">
+                <div class="form">
+                    <input placeholder="Nome" type="text" class="input">
+                    <input placeholder="Email" id="mail" type="email" class="input">
+                    <textarea placeholder="Descreva como podemos ajudar você..." rows="10" cols="30" id="message"
+                        name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                        <div class="send-button">Enviar mensagem</div>
+                        <div class="reset-button-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer-componente></footer-componente>
+</body>
+
+            
+            <article>
+                <h1 class="perguntas">Perguntas frequentes</h1>
+                <p class="reunimos">Reunimos dúvidas comuns para ajudar você a encontrar respostas rapidamente.</p>
+                <div class="faq-root">
+ <section id="s2">
+    <!-- Cards de categoria -->
+    <div class="faq-tabs">
+ 
+      <div class="faq-tab active" data-panel="geral" onclick="selectTab(this)">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <div class="faq-tab-title">Geral</div>
+        <div class="faq-tab-desc">Informações gerais sobre a Integra+ e como funcionamos</div>
+      </div>
+ 
+      <div class="faq-tab" data-panel="planos" onclick="selectTab(this)">
+        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        <div class="faq-tab-title">Planos e pagamentos</div>
+        <div class="faq-tab-desc">Tire suas dúvidas sobre nossos planos e preços</div>
+      </div>
+ 
+      <div class="faq-tab" data-panel="legislacao" onclick="selectTab(this)">
+        <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 6l7-3 7 3"/><path d="M3 12l4-2 2 4"/><path d="M21 12l-4-2-2 4"/></svg>
+        <div class="faq-tab-title">Legislação</div>
+        <div class="faq-tab-desc">Entenda as obrigações legais de acessibilidade</div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Painel Geral -->
+    <div class="faq-panel open" id="panel-geral">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>O que é a Integra+?</div>
+        <div class="faq-answer">A Integra+ é uma empresa especializada em melhorias de acessibilidade em espaços físicos públicos. Ajudamos prefeituras, órgãos públicos e estabelecimentos a diagnosticar barreiras e implementar adequações para garantir acesso a todas as pessoas.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Que tipos de locais vocês atendem?</div>
+        <div class="faq-answer">Atendemos calçadas, praças, parques, prédios públicos, escolas, unidades de saúde, terminais de transporte e outros espaços de uso coletivo. Nossa atuação abrange tanto obras novas quanto a adequação de estruturas já existentes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Quanto tempo leva para implementar as melhorias?</div>
+        <div class="faq-answer">Varia conforme a complexidade do local. Adequações simples — como instalação de rampas e corrimãos — podem ser concluídas em 2 a 4 semanas. Projetos maiores podem levar de 2 a 6 meses. Todo projeto inclui um cronograma personalizado.</div>
+      </div>
+    </div>
+ 
+    <!-- Painel Planos -->
+    <div class="faq-panel" id="panel-planos">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Como funciona a contratação?</div>
+        <div class="faq-answer">O processo começa com uma visita técnica ao local para levantamento das condições. A partir disso, elaboramos um laudo e uma proposta detalhada com escopo, prazo e investimento necessário.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Vocês atendem contratos com o poder público?</div>
+        <div class="faq-answer">Sim. Temos experiência em licitações e contratos administrativos com prefeituras, autarquias e órgãos estaduais. Nossa equipe auxilia no processo documental e de habilitação quando necessário.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>É possível parcelar o investimento?</div>
+        <div class="faq-answer">Para contratos privados, oferecemos condições de pagamento flexíveis conforme o porte do projeto. Para contratos públicos, os pagamentos seguem o cronograma de medições definido em contrato.</div>
+      </div>
+    </div>
+ 
+    <!-- Painel Legislação -->
+    <div class="faq-panel" id="panel-legislacao">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Qual lei obriga a acessibilidade em espaços públicos?</div>
+        <div class="faq-answer">A Lei Brasileira de Inclusão (LBI) — Lei nº 13.146/2015 — e a Lei nº 10.098/2000 estabelecem as diretrizes nacionais para acessibilidade em logradouros, edificações e transportes públicos. O descumprimento pode acarretar multas e interdições.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>O que exige a ABNT NBR 9050?</div>
+        <div class="faq-answer">A NBR 9050 define as condições técnicas de acessibilidade para edificações e mobiliário urbano. Ela especifica dimensões de rampas, corrimãos, pisos táteis, vagas de estacionamento, banheiros adaptados e muito mais.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-dot"></span>Prefeituras podem ser responsabilizadas por falta de acessibilidade?</div>
+        <div class="faq-answer">Sim. O Ministério Público pode acionar municípios que mantêm barreiras arquitetônicas em vias e prédios públicos. Além das sanções legais, a inadequação expõe a administração a ações de improbidade e danos morais coletivos.</div>
+      </div>
+    </div>
+ 
+  </div>
+
+<h1 class="fale">Fale com a <span>nossa equipe</span></h1>
+                <p class="preencha">Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+            </article>
+
+
+<section id="form">    
+<div class="container">
+    <div class="form-card">
+      <div class="form-header">
+        <span class="badge">✉ Fale Conosco</span>
+        <h1>Envie sua <span class="highlight">mensagem</span></h1>
+      </div>
+
+      <form class="form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Assunto</label>
+          <select id="subject" required>
+            <option value="" disabled selected>Selecione um assunto</option>
+            <option value="duvida">Dúvida geral</option>
+            <option value="tecnico">Suporte técnico</option>
+            <option value="planos">Planos e pagamentos</option>
+            <option value="parceria">Parcerias</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" rows="5" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar mensagem</button>
+      </form>
+
+      <div class="form-footer">
+        <p>Ou entre em contato por <a href="mailto:suporte@integramais.com.br">suporte@integramais.com.br</a></p>
+      </div>
+    </div>
+  </div>
+    </section>
+    </main>
+    <footer-componente></footer-componente>
+</body>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app')
+</script>
+
+ <script>
+        (function(d){
+        var s = d.createElement("script");
+        s.setAttribute("data-account","SEU_ID_AQUI");
+        s.setAttribute("src","https://cdn.userway.org/widget.js");
+        (d.body || d.head).appendChild(s);
+        })(document)
+    </script>
+
+
+</html>

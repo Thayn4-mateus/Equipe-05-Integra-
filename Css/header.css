@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Parte adicional do código, tive que adicionar como forma de tornar a header 
+responsiva de verdade*/
+
+.header_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    box-shadow: 0px 4px 10px rgb(0, 0, 0,  0.08);
+    gap: 30px;
+    margin-top: 30px;
+    background-color: white;
+    padding-top: 10px;
+    margin-top: 0px;
+    
+}
+
+.container_logo{
+    padding: 15px;
+
+}
+
+.links_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-style: normal;
+}
+
+.links_container a{
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.links_container a:hover{
+    color: #E85D1A;
+}
+
+.links_container a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #E85D1A;
+    transition: width 0.3 ease, left 0.3s ease; 
+}
+
+.links_container a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.container_botoes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao_de_diagnostico{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color:white;
+    background-color: #E85D1A;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0,  0.08);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.botao_de_diagnostico:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgb(232, 93, 26, 0.4);
+}
+
+.icone_perfil {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao_menu_lateral{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icone_perfil:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 5px 10px rgb(232, 93, 26, 0.3));
+}
+
+.botao_menu_lateral:hover{
+    transform: translateY(-5px);
+}
+
+.botao_menu_lateral img{
+    width: 35px;
+    height: auto;
+    display: block;
+    
+}
+
+
+/* Estilização do menu lateral 
+-------------------------------------*/
+
+/*area de fora do menu*/
+
+.container_menu_lateral{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 2000;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0,  0.08); 
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+} 
+
+.container_menu_lateral.ativo{
+    transform: translateX(0);
+}
+/*area de dentro do menu*/
+
+.header_menu_lateral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.botoes_menu_lateral{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+
+}
+
+.botao_cadastre_se{
+    width: 120px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #E85D1A;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+
+.botao_entrar{
+    width: 100px;
+    height: 40px;
+    background: none;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.botao_fechar{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.menu_lateral_links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600
+    
+}
+
+.menu_lateral_links a, 
+.botoes_menu_lateral button, 
+.botao_fechar {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu_lateral_links a:hover {
+    color: #E85D1A;
+}  
+
+.menu_lateral_links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #E85D1A;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu_lateral_links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.botoes_menu_lateral button:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);       
+    }
+
+.botao_fechar:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+    }
+
+
+    a{ 
+        text-decoration: none;
+        color: inherit;
+    }
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1500;
+    display: none;
+}
+
+.overlay.ativo{
+    display: block;
+}
+
+/*-------------   VERSÃO TABLET  -----------------*/
+
+    @media(max-width: 1024px) and (min-width: 421px) {
+      
+        header {
+            padding: 10px;
+            justify-content: space-between;
+            padding-left: 40px;
+        }
+
+        .links_container{
+            display: none;
+        }
+
+        .container_logo{
+            margin-left: 0;
+            padding: 10px 0;;
+
+        }
+
+        .container_botoes{
+            display: flex;
+            gap: 15px;
+            padding-right: 40px;
+        }
+
+        .botao_de_diagnostico{
+            display: none;
+        }
+
+        .botao_menu_lateral{
+           display: block;
+           cursor: pointer;
+        }
+}   
+
+
+
+
+/*-------------  VERSÃO MOBILE -----------------*/
+
+ @media(max-width: 420px) {
+
+      header {
+            padding-left: 0;
+            justify-content: space-between;
+            margin-left: 0;
+        }
+
+        .links_container{
+            display: none;
+        }
+
+        .container_logo{
+            margin-left: 0;
+            padding: 5px;
+
+        }
+
+        .container_botoes{
+            display: flex;
+            gap: 15px;
+            padding-right: 40px;
+        }
+
+        .botao_de_diagnostico{
+            display: none;
+        }
+
+        .botao_menu_lateral{
+           display:inline;
+           cursor: pointer;
+        } 
+    }
+
+/*------------------Posicionamento das ferramentas de sustentabilidade------------------------*/
+
+.enabled{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 10px !important;
+    left: auto !important;
+}
+
+div#userwayAccessibilityIcon, 
+.userway_buttons_wrapper, 
+.u_w {
+
+    bottom: 20px !important;
+    left: 10px !important;
+    right: auto !important; 
+    top: auto !important;
+}
+
+

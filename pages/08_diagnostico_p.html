@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico de Acessibilidade | Integra+</title>
+
+    <link rel="stylesheet" href="../Css/perguntas.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- HEADER -->
+    <header-component></header-component>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-right">
+            <span class="nav-step" id="nav-step-label">Pergunta 1 de 8</span>
+            <a href="../pages/07_diagnostico.html" class="btn-back"> ← Voltar ao site </a>
+        </div>
+    </nav>
+
+    <!-- QUIZ -->
+    <div id="page-quiz" class="page active">
+        <div class="quiz-wrap">
+            <div class="quiz-top">
+            <div id="quiz-category" class="quiz-category">
+                ACESSIBILIDADE FÍSICA
+            </div>
+            <span id="quiz-step-sm" class="quiz-step-label">1 / 8</span>
+            </div>
+            <div class="progress-bar-wrap">
+            <div
+                class="progress-bar-fill"
+                id="progress-bar"
+                style="width: 12.5%"
+            ></div>
+            </div>
+            <div class="quiz-card" id="quiz-card"></div>
+        </div>
+    </div>
+
+    <div id="page-results" class="page">
+            <div id="result-content"></div>
+    </div>
+    
+    <footer-componente></footer-componente>
+
+    <script src="../Js/perguntas.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/header.css">
+    <link rel="stylesheet" href="/Css/footer.css">
+    <link rel="stylesheet" href="/Css/login.css" type="text/css">
+    <script src="/components/footer.js" ></script>
+    <script src="/components/header.js" ></script>
+</head>
+<body>
+
+    <header-component></header-component>
+    <main>
+
+       <div class="container">
+    <section class="login-container hidden">
+
+        <div class="login-conteudo hidden-left">
+            <div class="logo">
+                <img src="/img/Logo_Integra+.svg" alt="Logo da integra mais">
+            </div>
+
+            <h1>Seja Bem vindo(a)</h1>
+
+            <form action="#">
+                <div class="campo_login">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="campo_login">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="divisor">
+                    <hr> <span>Entre com outros</span> <hr>
+                </div>
+
+                <button type="button" class="btn-social">
+                    <img src="/img/icone-google.svg" alt="G" style="width: 20px;"> 
+                    Entrar com Google
+                </button>
+
+                <button type="button" class="btn-social">
+                    <img src="/img/icone_apple.svg" alt="A" style="width: 20px;"> 
+                    Entrar com Apple
+                </button>
+
+                <button type="submit" class="btn-entrar">ENTRAR</button>
+            </form>
+        </div> <div class="login-imagem"> 
+            <img src="/img/pessoa_cega_c_cao_guia.svg" alt="Pessoas no escritório com cão guia"> 
+        </div>
+        
+        </section>
+</div>
+    </main>
+    <footer-componente></footer-componente>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script>
+        (function(d){
+            var s = d.createElement("script");
+            /* IMPORTANTE: Substitua 'SEU_ID_AQUI' pelo ID real da sua conta UserWay */
+            s.setAttribute("data-account", "SEU_ID_AQUI"); 
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document);
+    </script>
+</body>
+</html>

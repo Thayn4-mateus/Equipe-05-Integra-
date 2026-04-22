@@ -1,0 +1,1226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body span{
+    color: #E85D1A;
+    font-weight: 700;
+}
+
+#sobre{
+    width: 100%;
+    height:100vh;
+    /* margin-top: 200px; */
+}
+
+#topo img{
+    width: 100%;
+    height: auto;
+    display: block; /*Garante que a imagem seja exibida como um bloco, ocupando toda a largura disponível */
+    background: rgba(46, 45, 45, 0.65);
+}
+
+#topo h1 {
+    position: absolute;
+    width: 100%;
+    top: 25%;          /* Ajustado para não subir tanto */
+    left: 70px;        /* Em vez de left 50% + transform, use a margem real */
+    line-height: 1;  /* Aumentado de 1 para 1.1 para não cortar letras */
+    color: rgb(255, 255, 255);
+    font-size: 80px;   /* Reduzi um pouco para caber melhor na tela */
+    text-align: left;
+    /* Remova display: flex, justify-content e align-items daqui */
+}
+
+/* h1 span{
+    color: #E85D1A;
+} */
+
+
+.linha {
+  width: 200px; /* tamanho da barra */
+  height: 8px;
+  background-color: #E85D1A;
+  position: absolute;
+  top: 140px;
+  left: 150px;
+}
+
+.linha2 {
+  width: 200px; /* tamanho da barra */
+  height: 8px;
+  background-color: #E85D1A;
+  position: absolute;
+  top: 225px;
+  left: 150px;
+}
+
+.linha3 {
+  width: 200px; /* tamanho da barra */
+  height: 8px;
+  background-color: #E85D1A;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+
+
+
+#topo p{
+    position: absolute;
+    top: 11%;
+    left: 20% ;
+    font-size: 30px;
+    color: #E85D1A;
+}
+
+#p2{
+        font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+
+.detalhe{
+    color: #E85D1A;
+}
+
+#topo #p2{
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: left;         
+    padding: 0 50px;             
+}
+
+#buttonp1{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    /* font-size: 50px; */
+    color: #ffffff;
+    background-color: #E85D1A;
+    border: 5px solid #E85D1A;
+    padding: 10px 20px;
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
+    border-radius: 10px;
+    color: #FFF;
+    /* font-size: 500px; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.68px; /* 105.6% */
+}
+
+#buttonp1{
+    color:white;
+    font-size: 23px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 300px;
+    left: 3%;
+}
+
+
+#historia{
+    display: flex;
+    height: 100vh;
+
+}
+
+#azul{
+    width: 50%;
+    background-color: #1C2333;
+    
+    
+}
+
+#branco{
+    display: flex;
+    width: 50%;
+    background-color: #FFFFFF;
+    text-align: left;
+    justify-content: center;
+    font-size: 30px;
+    padding: 200px;
+    
+}
+
+#branco span{
+    color: #E85D1A;
+    font-weight: 700;
+}
+
+#branco p{
+    color: #000000;
+    line-height: 1.5;
+    /* width: 80%; */
+    font-weight: 700;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+#nossa{
+    font-size: 30px;
+    color: #E85D1A;
+    text-align: left;
+    padding-top: 210px;
+    padding-left: 400px;
+}
+
+#nascer{
+    color: white;
+    font-size: 100px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 100px;
+    font-weight: 1000;
+    line-height: 1;
+
+}
+
+#nascer span{
+    color: #E85D1A;
+    font-weight: 1000;
+}
+
+
+#MVV{
+    display: flex;
+    /* height: 800px; */
+    flex-direction: column;
+    gap: 300px;
+    align-items: center;
+    text-align: left;
+    
+  
+  /* width: 100%;
+  height: 250px;       /* define altura fixa */
+  /* object-fit: cover;   /* corta sem distorcer */
+  /* border-radius: 12px; */ 
+}
+
+    #alvo, #olhar, #quebra{
+    position: relative;
+    min-height: 300px; /* ou maior se precisar */
+    
+}
+#alvo3{
+    font-size: 70px;
+}
+
+#MVV img{
+    width: 30%;
+    height: auto;
+    object-fit: cover;   /* corta sem distorcer */
+    border-radius: 12px;
+}
+
+
+#alvo{
+    position: relative;
+    height: 100px;
+  width: 90%;
+  height: 250px;       /* define altura fixa */
+  object-fit: cover;   /* corta sem distorcer */
+  border-radius: 12px;
+  margin-top:5% ;
+}
+
+
+
+
+#alvo2{
+    position: absolute;
+    margin-top: 100px;
+    text-align: left;
+    width: 400px;
+    margin-left: -1200px;
+    font-size: 10px;
+}
+
+#alvo2 h1{
+    margin-left: 200px;
+}
+
+#alvo h1{
+    position: absolute;
+    color: #E85D1A;
+    font-size: 70px;
+    text-align: left;
+    justify-content: center;
+    margin-top: -300px;
+    left: 350px;
+}
+
+#alvo p{
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    left: 350px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+#olhar{
+    position: relative;
+    height: 100px;
+  width: 90%;
+  height: 250px;       /* define altura fixa */
+  object-fit: cover;   /* corta sem distorcer */
+  border-radius: 12px;
+  margin-top:5% ;
+}
+
+#olhar img{
+    width: 80%;
+    object-fit: cover;   /* corta sem distorcer */
+    border-radius: 12px;
+}
+
+#alvo3 {
+    margin-left: -900px;
+}
+
+#alvo3 h1{
+    position: absolute;
+   margin-left: -2000px;
+}
+
+#olhar h1{
+    
+    color: #E85D1A;
+    font-size: 70px;
+    text-align: left;
+    margin-top: -30%;
+    left: 50px;
+}
+
+#olhar p{
+    
+    color: #ffffff;
+    font-size: 35px;
+    text-align: left;
+    width: 500px;
+}
+    
+
+
+
+
+
+#quebra {
+
+    position: relative;
+    height: 100px;
+  width: 90%;
+  height: 250px;       /* define altura fixa */
+  object-fit: cover;   /* corta sem distorcer */
+  border-radius: 12px;
+  margin-top:5% ;
+}
+
+#quebra img{
+    width: 80%;
+    object-fit: cover;   /* corta sem distorcer */
+    border-radius: 12px;
+}
+
+#quebra h1{
+    position: absolute;
+    color: #E85D1A;
+    font-size: 70px;
+    text-align: left;
+    top: 30%;
+    left: 350px;
+}
+
+#quebra p{
+    position: absolute;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: left;
+    top: 70%;
+    left: 350px;
+    width: 500px;
+}
+
+
+#impacto {
+    min-height: 110vh;  /* ou o valor que quiser */
+    width: 100%;
+    background-color: #1C2333;
+    margin-top: 400px;
+    padding: 60px 40px;  /* adiciona espaço interno */
+    box-sizing: border-box;
+}
+
+#impacto p{
+    text-align: left;
+    color: #B7B7B7;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #B7B7B7;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botoes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width:100%;
+    height: 80px;
+
+}
+
+.botoes a {
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+  transition: all 0.3s ease;
+}
+
+.botoes a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.diagnostico {
+    background-color: white;
+    color: #1a2233 !important;
+}
+
+#impacto h1{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 1;
+    color: white;
+
+
+}
+
+#impacto span{
+   font-weight: 1000;
+}
+
+#trasnformam{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#transformam h1{
+    line-height: 1;
+
+}
+
+#real{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Faz com que os cards tenham a mesma altura */
+    justify-content: center; 
+    gap: 30px; 
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* 
+.nu1 {
+  color: #E85D1A;
+}
+
+.nu2 {
+  color: #f4c542;
+}
+
+.nu3 {
+  color: #3aa6ff;
+} */
+
+.nu1{
+  color: #3f82ff;   /* Azul */
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.nu2 {
+  color: #2ecc71;   /* Verde */
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.nu3 {
+  color: #f1c40f;   /* Amarelo */
+  font-size: 55px;
+  font-weight: 700;
+}
+
+
+
+
+.cards{
+    flex: 1; /* Faz com que cada card ocupe o mesmo espaço disponível */
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(217, 217, 217, 0.10);
+}
+
+#part4{
+    height: 100vh;
+}
+
+#ladoA{
+    /* width: 50%; */
+    position: relative;
+}   
+#ladoA h1{
+    text-align: left;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-weight: 1000;
+    line-height: 1;
+}
+
+
+#ladoA span{
+    font-weight: 1000;
+}
+
+#ladoA p{
+    text-align: left;
+    font-size: 30px;
+    color: #B7B7B7;
+    margin-top: 80px;
+    margin-left: 400px;
+    font-weight: normal;
+
+}
+
+#para2{
+    text-align: end;
+    /* width: 50%; */
+}
+
+#ladoB{
+    /* width: 50%; */
+    display: flex;
+    align-items: flex-start; /*  sobe tudo pro topo */
+
+}
+
+#ladoB p{
+    font-size: 50px;
+    /* width: 50%; */
+    display: flex;
+    justify-content: end;
+    text-align: left;
+    margin-left: 1000px;
+    position: absolute;
+    padding: 20px;
+    margin-top: -200px;
+}
+
+#colorido{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+.para01{
+    font-size: 30px;
+    color: #E85D1A;
+    font-weight: 1000;
+    line-height: 1;
+}
+
+.card3{
+    background-color: #E85D1A;
+    height: 480px;
+    width: 30%;
+    border-radius: 10px;
+    border-radius: 10px 0 0 10px ;
+    border-left: 8px solid #E85D1A;
+    background: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+
+
+
+.card3:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  background: #f5f5f5;
+}
+
+
+.card3 h1{
+    text-align: left;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.card3 p{
+    margin-left: 25px;
+    font-size: 24px;
+}
+
+.para3{
+    color: black;
+    text-align: left;
+    width: 90%;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.ods{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.ods h1, .ods h1 span{
+    font-size: 60px;
+    margin-top: 100px;
+    font-family: montserrat, sans-serif;
+    font-weight: 1000;
+    line-height: 1;
+}
+.ods1, .ods2, .ods3 {
+    flex-direction: row;
+    display: inline-block;
+    margin: 0 10px;         /* Espaço entre os quadradinhos das ODS */
+}
+
+/* Isso faz com que as divs das imagens fiquem lado a lado */
+.ods div {
+    display: inline-block; 
+    vertical-align: middle;
+    margin: 10px;
+}
+
+
+.equipe{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.equipe h1, .equipe h1 span{
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+
+
+
+
+
+#frase1{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frase h1{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#frase p{
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+#ultima{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E85D1A;
+}
+
+#ultima h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#botao button{
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #E85D1A;
+    font-weight: 700;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.primary {
+  background: #fff;
+  color: #e85d1f;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.secondary {
+  background: #fff;
+  color: #e85d1f;
+  opacity: 0.9;
+}
+
+.secondary:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.imagens {
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  border-radius: 15px;
+  margin: 15px 0;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card3:nth-child(1) .imagens {
+  background: #3b82f6; /* azul */
+}
+
+.card3:nth-child(2) .imagens {
+  background: #22c55e; /* verde */
+}
+
+.card3:nth-child(3) .imagens {
+  background: #facc15; /* amarelo */
+}
+
+
+/* ===========================
+   CORREÇÃO SEÇÃO ODS
+   =========================== */
+
+.ods {
+    min-height: auto;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Container que agrupa as imagens lado a lado */
+.ods-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Caso as imagens estejam dentro de divs soltas (ods1, ods2, ods3) */
+.ods1, .ods2, .ods3 {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+/* Caso a estrutura use apenas .ods div */
+.ods > div {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+/* TAMANHO das imagens ODS — crítico! */
+.ods img,
+.ods1 img,
+.ods2 img,
+.ods3 img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+
+    #alvo, #olhar, #quebra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        min-height: auto;
+    }
+
+    #alvo img, #olhar img, #quebra img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    #alvo h1, #olhar h1, #quebra h1 {
+        position: static;   /* REMOVE o absolute */
+        font-size: 70px;
+        text-align: center;
+        margin-top: 20px;
+       
+    }
+
+    #alvo h1, #alvo p{
+        margin-top: -20px;
+    }
+
+    #visao{
+        width: auto;
+        margin-left: -300px;
+    }
+
+    #valores{
+        margin-left: -900px;
+    }
+
+    #quebra h1{
+        margin-top: -600px;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    #olhar h2, #olhar p{
+        gap: 20px;
+        margin-top: -700px;
+        
+    }
+
+
+    #alvo p, #olhar p, #quebra p {
+        position: static;   /* REMOVE o absolute */
+        font-size: 40px;
+        text-align: left;
+        width: 500px;
+        margin: 10px auto 20px;
+        margin-left: 200px;
+    }
+
+    #alvo3 h1 {
+        margin-left: -600px;
+    }
+
+    
+
+    #MVV {
+        gap: 20px;
+    }
+
+
+#real {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+
+#impacto{
+    height: auto;
+}
+
+.cards {
+    flex: 1;
+    width: 100%;
+    min-width: 0; /* evita overflow */
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(217, 217, 217, 0.10);
+}
+
+.ods{
+    margin-top: 40%;
+}
+.equipe{
+    margin-top: -30%;
+}
+
+/* Título da seção */
+.ods h1 {
+    font-size: 60px;
+    top: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    line-height: 1;
+}
+
+.ods h1 span {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#colorido p{
+    margin-top: 0px;
+}
+
+#topo p{
+    margin-top: 0px;
+}
+
+#p2{
+    margin-top: 0px;
+}
+
+#branco p{
+    margin-top: 0px;
+}
+
+.ods{
+    margin-top: 0%;
+}
+
+.equipe{
+    margin-top: 0%;
+}
+
+#visao{
+    display: flex;
+    margin-left: 200px;
+}
+
+h2{
+    font-size: 70px;
+    color: #E85D1A;
+    margin-left: 190px;
+}
+/* --- Tablet (max 900px) --- */
+
+
+/* ========================= */
+/* ANIMAÇÃO MVV */
+/* ========================= */
+
+/* ========================= */
+/* ANIMAÇÃO GLOBAL */
+/* ========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px) scale(0.65);
+    transition: all 0.2s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.reveal:nth-child(1) { transition-delay: 0.1s; }
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.1s; }
+
+[vw] [vw-access-button] {
+    bottom: 20px !important;
+    right: 20px !important;
+}
+
+div#userwayAccessibilityIcon,
+.uwy.userway_buttons_wrapper {
+    bottom: -250px !important;
+    right: 9px !important;
+}
+
+[vw] [vw-plugin-wrapper] {
+    bottom: 40px !important;
+}
+
+
+#topo {
+  position: relative;
+  z-index: 10;
+}
+
+#historia {
+  position: relative;
+  z-index: 1;
+}
+
+#buttonp1 {
+  position: absolute;
+  z-index: 20;
+}
+
+/* ========================= */
+/* RESPONSIVO TABLET */
+/* ========================= */
+
+@media (max-width: 1024px){
+
+    #topo h1{
+        font-size: 50px;
+        left: 40px;
+    }
+
+    #topo p,
+    #topo #p2{
+        left: 40px;
+    }
+
+    #historia{
+        flex-direction: column;
+    }
+
+    #azul, #branco{
+        width: 100%;
+        min-height: auto;
+        padding: 60px;
+    }
+
+    #real{
+        flex-direction: column;
+    }
+
+    #colorido{
+        flex-direction: column;
+    }
+
+    .card3{
+        width: 100%;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVO CELULAR */
+/* ========================= */
+
+@media (max-width: 268px){
+
+    /* ===== TOPO ===== */
+    #topo h1{
+        font-size: 36px;
+        left: 20px;
+        top: 30%;
+    }
+
+    #topo p{
+        font-size: 16px;
+        left: 20px;
+        top: 15%;
+    }
+
+    #topo #p2{
+        font-size: 16px;
+        left: 20px;
+        top: 55%;
+        max-width: 90%;
+    }
+
+    #buttonp1{
+        left: 20px;
+        bottom: 40px;
+        font-size: 14px;
+    }
+
+    /* ===== HISTORIA ===== */
+    #azul, #branco{
+        padding: 40px 20px;
+    }
+
+    #branco p{
+        font-size: 16px;
+    }
+
+    #nascer{
+        font-size: 40px;
+    }
+
+    /* ===== MVV ===== */
+    #alvo, #olhar, #quebra {
+    display: flex;
+    flex-direction: row; /* Coloca imagem ao lado do texto */
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative; /* Remova o absolute dos filhos */
+}
+
+    #MVV img{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #MVV h1{
+        font-size: 28px;
+    }
+
+    #MVV p{
+        font-size: 16px;
+    }
+
+    /* ===== IMPACTO ===== */
+    #impacto h1{
+        font-size: 36px;
+    }
+
+    #impacto p{
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes a{
+        width: 90%;
+        text-align: center;
+    }
+
+    /* ===== PART 4 ===== */
+    #ladoA h1{
+        font-size: 36px;
+        margin-left: 20px;
+    }
+
+    #ladoB p{
+        position: static;
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    #colorido{
+        flex-direction: column;
+    }
+
+    .card3{
+        width: 100%;
+    }
+
+    .para3{
+        font-size: 16px;
+    }
+
+    /* ===== ODS ===== */
+    .ods img{
+        width: 120px;
+        height: auto;
+    }
+
+    /* ===== FRASE ===== */
+    #frase h1{
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    #frase p{
+        font-size: 14px;
+    }
+
+    /* ===== FINAL ===== */
+    #ultima h1{
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .btn{
+        width: 90%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat_bot da Integra+</title>
+    <!-- Sobe uma pasta (..) e entra em Css/ -->
+    <link rel="stylesheet" href="../Css/chatbot.css" type="text/css">
+</head>
+
+<body>
+    <aside class="container_chatbot">
+        <div class="chat_janela" id="chatJanela">
+            <div class="chat_header">
+                <div class="atendente_info">
+                    <!-- Sobe uma pasta (..) e entra em img/ -->
+                    <img src="../img/Ícone de chatbot amistoso e moderno.png" alt="icone do nosso chatbot"
+                        class="foto_atendente">
+                </div>
+                <button class="btn_fechar" id="btnFecharChat" aria-label="Fechar Chat">×</button>
+            </div>
+
+            <div class="chat_body" id="chat-messages"></div>
+
+            // ... dentro da criação do chatbot ...
+            <div class="chat_footer">
+                <div class="input_container">
+                    <input type="text" id="user-input" placeholder="Escreva aqui...">
+                    <button class="btn_enviar" id="btnEnviarMsg"> <img src="img/Vector (8).svg">
+                    </button>
+                </div>
+            </div>
+            <p class="nota_seguranca">Integra+ <br> Inclusão que se constrói.</p>
+        </div>
+        </div>
+
+        <div class="chat_icone_flutuante" id="btnAbrirChat">
+            <!-- Agora os dois usam o mesmo caminho -->
+            <img src="../img/Chat_bot_icone.svg" alt="Abrir atendimento">
+        </div>
+    </aside>
+
+    <!-- Sobe uma pasta (..) e entra em Js/ -->
+    <script src="../Js/chatbot.js"></script>
+</body>
+
+</html>

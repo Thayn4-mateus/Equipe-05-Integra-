@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Notícias</title>
+    <link rel="stylesheet" href="../Css/noticias.css" />
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+
+
+     <script src="../components/footer.js"></script>
+    <script src="../components/header.js"></script>
+</head>
+<body>
+
+        <header-component></header-component>
+    <!-- HEADER -->
+    <section id="header">
+        <img src="../img/Group 16.svg" alt="">
+        <h1>Descubra as novidades da <br><span>inclusão</span> e <span>acessibilidade</span> no Brasil</h1>
+        <div id="botao">
+            <input type="text" placeholder="🔍 Buscar notícias...">
+            <button>Assinar</button>
+        </div>
+    </section>
+
+    <!-- BARRA + MENU -->
+    <section>
+        <div id="barra"></div>
+        <nav>
+            <ul class="menu">
+                <li>Todas</li>
+                <li>Inovação</li>
+                <li>Corporativo</li>
+                <li>Emprego</li>
+                <li>Tecnologia</li>
+                <li>Legislação</li>
+                <li>Mobilidade</li>
+                <li>Educação</li>
+                <li>Saúde</li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- ALERTA URGENTE -->
+    <section id="alerta">
+        <div id="urgente">
+            <div id="quadrado">URGENTE</div>
+            <div id="traco"></div>
+            <h1><span>Nova lei cotas digitais: </span>governo amplia obrigações de acessibilidade para plataformas de e-commerce com mais de 500 mil usuários.</h1>
+        </div>
+    </section>
+
+    <!-- CARD GRANDE -->
+    <section id="cardGrande">
+        <div id="avanco"><img src="../img/Group 18.svg" alt=""></div>
+        <div id="texto">
+            <p class="p1"><span>INOVAÇÃO</span></p>
+            <h1>Brasil avança em tecnologias assistivas e registra crescimento de 40% no setor em 2025</h1>
+            <p class="p2"><span>Redação Ideia |</span> Há 3 Horas atrás <span> | </span> 5 min de leitura</p>
+        </div>
+    </section>
+
+    <!-- MAIS LIDAS HOJE -->
+    <section id="hoje">
+        <h1 id="lidas"><span>MAIS LIDAS HOJE</span></h1>
+        <div id="barra2"></div>
+
+        <div class="cards-lidas">
+            <div class="card1">
+                <img src="../img/Group 115.svg" alt="">
+                <div class="texto1">
+                    <h1><span>Corporativo</span></h1>
+                    <p>Magazine Luiza anuncia meta de 30% de colaboradores PCD até 2027</p>
+                    <p class="horas">Há 3 horas</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="../img/Group 116.svg" alt="">
+                <div class="texto2">
+                    <h1><span>Tecnologia</span></h1>
+                    <p>App brasileiro transforma qualquer texto em Libras com IA em tempo real</p>
+                    <p class="horas">Há 3 horas</p>
+                </div>
+            </div>
+
+            <div class="card3">
+                <img src="../img/Jobs.svg" alt="">
+                <div class="texto3">
+                    <h1><span>Emprego</span></h1>
+                    <p>Vagas para PCD crescem 62% no primeiro trimestre; veja como se candidatar</p>
+                    <p class="horas">Há 3 horas</p>
+                </div>
+            </div>
+
+            <div class="card4">
+                <img src="../img/LegislativoIcon.svg" alt="">
+                <div class="texto4">
+                    <h1><span>Legislação</span></h1>
+                    <p>STF reafirma: empresas devem garantir acessibilidade digital sob pena de multa</p>
+                    <p class="horas">Há 3 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INOVAÇÃO & MERCADO -->
+    <section class="inova">
+        <div class="barrinha"></div>
+        <h1 id="paragr1">Inovação & Mercado</h1>
+
+        <div class="cardss">
+            <div class="card">
+                <img src="../img/mulherVR.svg" alt="Inovação" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Inovação</span>
+                    <h2 class="titulo">Exoesqueleto robótico usado por Mara Gabrilli chega ao SUS em SP... </h2>
+                    <p class="descricao">Inscrições abertas até 15 de abril. Banco oferece trabalho híbrido...</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 2 horas atrás</span>
+                        <a href="https://oglobo.globo.com/saude/medicina/noticia/2023/06/exoesqueleto-robotico-usado-por-mara-gabrilli-chega-ao-sus-em-sp-para-pacientes-com-paraplegia-veja-video.ghtml" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/MulherVendoPasta.svg" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Corporativo</span>
+                    <h2 class="titulo">Programa da Ambev acelera 80 novos projetos para fortalecer a inclusão produtiva no Brasil</h2>
+                    <p class="descricao">Levantamento da FGV mostra que empresas com diversidade têm melhor desempenho financeiro e retenção de talentos.</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 3 horas atrás</span>
+                        <a href="https://exame.com/esg/programa-da-ambev-acelera-80-novos-projetos-para-fortalecer-a-inclusao-produtiva-no-brasil/" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/pessoasNoPonto.svg" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Mobilidade</span>
+                    <h2 class="titulo">Aplicativo de SP premiado no exterior mostra locais com acessibilidade para cadeirantes</h2>
+                    <p class="descricao">Curso online de 6 meses já tem 1.200 inscritos e conecta formados a empresas parceiras ao fim do programa.</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 4 horas atrás</span>
+                        <a href="https://g1.globo.com/sao-paulo/noticia/aplicativo-de-sp-premiado-no-exterior-mostra-locais-com-acessibilidade-para-cadeirantes.ghtml" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPORTUNIDADES DE EMPREGO -->
+    <section class="oportunidade">
+        <div class="barrinha2"></div>
+        <h1 id="emprego">Oportunidades de Emprego</h1>
+
+        <div class="cardss">
+            <div class="card">
+                <img src="../img/pc´s.svg" alt="Emprego" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Emprego · Tecnologia</span>
+                    <h2 class="titulo">Itaú abre 200 vagas exclusivas para PCD em tecnologia e atendimento</h2>
+                    <p class="descricao">Equipamento permite que pacientes com paralisia recuperem mobilidade. Será testado em 3 hospitais públicos de São Paulo.</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 2 horas atrás</span>
+                        <a href="https://carreiras.itau.com.br/busca-de-vagas" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/mulherSorrindo.svg" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Emprego · Análise</span>
+                    <h2 class="titulo">Salários de PCD em cargos de liderança crescem 18% em 2025, aponta pesquisa</h2>
+                    <p class="descricao">Iniciativa vai oferecer 800 vagas e formação profissional gratuita em parceria com o SENAI em todo o Brasil.</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 3 horas atrás</span>
+                        <a href="#" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/MulherComLivro.svg" class="card-img">
+                <div class="card-body">
+                    <span class="categoria">Emprego · Educação</span>
+                    <h2 class="titulo">Bradesco e DIO lançam bootcamp gratuito em Java e QA com foco na inclusão de PcD</h2>
+                    <p class="descricao">O banco Bradesco, em parceria com a plataforma de educação DIO, anunciou nesta semana o lançamento do Bootcamp PcD Tech Bradesco.</p>
+                    <div class="card-footer">
+                        <span class="tempo">Há 4 horas atrás</span>
+                        <a href="#" class="botao-ler">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVIDADES / NEWSLETTER -->
+    <section id="novidades">
+        <div id="cardnov2">
+            <div id="cardNov">
+                <h1>Fique por dentro das novidades em acessibilidade</h1>
+                <p>Receba as principais notícias direto no seu e-mail, toda semana. Gratuito</p>
+                <div class="newsletter-row">
+                    <input type="text" placeholder="Seu melhor e-mail" class="botao-assinar">
+                    <a href="#" class="botao-assinar2">Assinar Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-componente></footer-componente>   
+</body>
+</html>

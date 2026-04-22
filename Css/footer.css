@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+footer{
+    background-color:#1C2333 ;
+    font-family: "Montserrat", sans-serif;
+    padding: 60px 0; 
+}
+
+
+.footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+
+.footer_info {
+    flex: 1; 
+    min-width: 250px; 
+    max-width: 320px; 
+}
+
+.logo_footer{
+    width: 180px;
+    margin-bottom: 25px; 
+}
+
+.footer_description {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+}
+
+.container_rede_sociais{
+    display: flex;
+    gap: 15px;
+}
+
+.container_rede_sociais img {
+    width: 24px;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer_links h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: none;
+    margin-bottom: 15px;
+}
+
+
+.footer_links nav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+
+.footer_links a, .info_contato {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_links a:hover {
+    text-decoration: underline;
+}
+
+footer-componente{
+    display: block; 
+    transform: translateY(30px);
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+footer-componente.footer-visivel{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container_rede_sociais a img{
+    transition: transform 0.3s ease;
+}
+
+.container_rede_sociais a:hover img{
+    transform: scale(1.2) translateY(-8px);
+    filter: drop-shadow(0px 0px 10px rgba(232, 93, 26, 0.6)) brightness(1.2);
+}
+
+.footer_links a{
+    position: relative;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer_links a:hover{
+    color: #E85D1A;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.footer_links nav a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; 
+}
+
+.footer_links nav a:hover {
+    transform: translateX(8px);
+    color: #E85D1A;
+}
+
+.coluna {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* ------------------ Tablet ------------------ */
+
+@media (max-width: 1024px){
+
+    .footer_container {
+        justify-content: flex-start; 
+        gap: 40px;
+    }
+}
+
+/* ------------------ Mobile ------------------ */
+
+@media (max-width: 768px){
+    .footer_container {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer_info {
+        max-width: 100%; 
+        width: 100%;
+    }
+
+        .footer_plataforma{
+            width: 100%;
+        }
+
+        .footer_plataforma nav{
+            gap:15px
+        }
+
+        .footer_links h4{
+            margin-bottom: 10px;
+        }
+
+         .footer_recursos{
+            display: none;
+          }
+
+          .footer_contato{
+            display: none;
+          }
+    }
+
+/*------------------Posicionamento das ferramentas de sustentabilidade------------------------*/
+
+.enabled{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 10px !important;
+    left: auto !important;
+}
+
+div#userwayAccessibilityIcon, 
+.userway_buttons_wrapper, 
+.u_w {
+
+    bottom: 20px !important;
+    left: 10px !important;
+    right: auto !important; 
+    top: auto !important;
+}
+
